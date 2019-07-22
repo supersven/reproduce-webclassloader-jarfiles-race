@@ -1,6 +1,6 @@
 # Reproduce a race-condition in WebappClassLoader
 
-Please see [./src/test/java/org/glassfish/web/loader/ReproduceTest.java]
+Please see [ReproduceTest](src/test/java/org/glassfish/web/loader/ReproduceTest.java)
 
 `ReproduceTest.shouldProvokeRaceConditionIn_findResourceInternalFromJars`
 concurrently calls `WebappClassLoader.addJar()`, `WebappClassLoader.findResource()` and `WebappClassLoader.closeJARs()`.
